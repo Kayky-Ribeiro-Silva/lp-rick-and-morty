@@ -1,0 +1,56 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+    color: #333;
+    background-color: #cbf3d2;
+}
+
+.logo{
+ width: 25%;
+ animation: fromTop 500ms ease-in-out;
+}
+
+@keyframes fromTop {
+    0% {
+    opacity: 0;
+    transform: translateY(-100px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    
+}
+
+.wrapCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.input{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+@media (width <= 1000px) {
+    .logo{
+        width: 50%;
+    }
+    .input{
+        flex-direction: column;
+    }
+}
